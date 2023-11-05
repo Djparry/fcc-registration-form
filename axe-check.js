@@ -47,7 +47,6 @@ async function runAccessibilityCheck() {
       report += '</details>\n\n';
     }
   }
-  /*Refactor axe-check.js */
   fs.writeFileSync('accessibility_report.md', report, 'utf8');
   console.log('Accessibility report generated.');
 }
